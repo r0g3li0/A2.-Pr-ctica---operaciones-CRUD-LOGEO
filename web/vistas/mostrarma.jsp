@@ -22,8 +22,8 @@ if(usuario==null)
                
     <table>
           <tr>
-            <th><a href="#" onclick="procesar('nuevoma','')">Nuevo Maestro</a></th>
-            <th><a href="SVista">Regresar</a></th>
+            <th><a href="#" onclick="procesar('nuevoma','')" style="background-color: graytext; border:1px;  text-decoration: none; border-collapse: collapse; border-width: 3px; border-radius: 4px; color: black;">Nuevo Maestro</a></th>
+            <th><a href="SVista" style="background-color: graytext; border:1px; text-decoration: none; border-radius: 4px; color: black;">Regresar</a></th>
           </tr>
    </table>
        

@@ -104,9 +104,9 @@ public class DAOAlumno
    public boolean actualizar(Alumno alumno,String old)
     {
         String sql = "UPDATE alumnos SET "+
-                 "Matricula = '" + alumno.getMatricula() + "', " +
-                 "Nombre    = '" + alumno.getNombre()    + "', " +
-                 "Genero = " + alumno.getGenero() + 
+                 "Matricula = '" + alumno.getMatricula() + "'," +
+                 "Nombre    = '" + alumno.getNombre()    + "'," +
+                 "Genero = '" + alumno.getGenero() +"'"+ 
                  " WHERE Matricula = '" + old + "'";
          try
         {

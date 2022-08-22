@@ -26,7 +26,7 @@
                         <td><input type="text"   name="tfNombre"   value="" /></td>
                         <td><input type="text"   name="tfPaterno"  value="" /></td>
                         <td><input type="text"   name="tfMaterno"  value="" /></td>
-                        <td><input type="submit" name="tfAccion"     value="Agregar"/></td> 
+                        <td><input type="submit" name="tfAccion"   value="Agregar"/></td> 
                         <td><a href="SMaestro"><button>REGRESAR</button></a> </td>
                     </tr>
                 </tbody>

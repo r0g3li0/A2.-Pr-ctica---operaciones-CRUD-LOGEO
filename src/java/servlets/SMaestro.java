@@ -59,9 +59,7 @@ public class SMaestro extends HttpServlet
             
             request.setAttribute("id", request.getParameter("tfId"));
             acceso = editarma;
-            
         }
-        
         
         else if(accion != null && accion.equalsIgnoreCase("actualizar"))
         {
@@ -71,7 +69,7 @@ public class SMaestro extends HttpServlet
             maestro.setId(request.getParameter("tfId"));
             maestro.setNombre(request.getParameter("tfNombre"));
             maestro.setPaterno(request.getParameter("tfPaterno"));
-            maestro.setPaterno(request.getParameter("tfMaterno"));
+            maestro.setMaterno(request.getParameter("tfMaterno"));
             
             
             daoMaestro = new DAOMaestro();

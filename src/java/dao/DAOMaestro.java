@@ -58,6 +58,7 @@ public class DAOMaestro
                 maestro.getMaterno() + "')";
     
         try 
+            
         {
             con = ConexionMySQL.getConnection();
             ps = con.prepareStatement(sql);
@@ -79,7 +80,6 @@ public class DAOMaestro
     public Maestro buscar(String id)
     {
         String sql = "SELECT * FROM maestros WHERE Id='" + id + "'";
-        
         
          try 
         {
@@ -110,15 +110,14 @@ public class DAOMaestro
    
     public boolean actualizar(Maestro maestro,String old)
     {
-      String sql = "UPDATE maestros SET"+
-                 "Id        = '" + maestro.getId() + "'," +
-                 "Nombre    = '" + maestro.getNombre() + "'," +
-                 "Paterno   = '" + maestro.getPaterno() + "'," +
-                 "Materno   =  " + maestro.getMaterno()+ 
+     
+      String sql = "UPDATE maestros SET "+
+                 "Id        = '" + maestro.getId() +"',"+
+                 "Nombre    = '" + maestro.getNombre() +"',"+
+                 "Paterno   = '" + maestro.getPaterno() +"',"+
+                 "Materno   = '" + maestro.getMaterno() +"'"+
                  " WHERE Id = '" + old + "'";
-     
-     
-         try 
+       try 
         {
             con = ConexionMySQL.getConnection(); 
             ps=con.prepareStatement(sql);

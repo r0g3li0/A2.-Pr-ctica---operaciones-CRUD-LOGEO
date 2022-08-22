@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-08-2022 a las 16:12:49
+-- Tiempo de generación: 22-08-2022 a las 08:25:44
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.8
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `alumnos` (
   `Matricula` varchar(17) NOT NULL,
-  `Nombre` varchar(17) NOT NULL,
+  `Nombre` varchar(40) NOT NULL,
   `Genero` varchar(19) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -38,13 +38,14 @@ CREATE TABLE `alumnos` (
 --
 
 INSERT INTO `alumnos` (`Matricula`, `Nombre`, `Genero`) VALUES
-('121211212', 'HILario', 'hombre'),
-('123456789012', 'florinda mesa', 'mujer'),
-('201920202021', 'kiko', 'mujer'),
-('3434344344', 'fernando lilia', 'hombre'),
-('454545454', 'gtgtgt', 'h'),
-('565656565656', 'jlia', 'mujer'),
-('57201000174', 'ROGELIO', 'PASCUALEÑO');
+('20701000176', 'Adrian gil', 'hombre'),
+('20701000310', 'PATY GARCIA HERNANDEZ', 'MUJER'),
+('57201000000', 'ROGELIO CHEPILLO PASCUALEÃO', 'HOMBRE'),
+('57201000164', 'JOSE DE JESUS RODRIGUEZ NAVARRETE', 'HOMBRE'),
+('57201000175', 'gabriela espinoza', 'mujer'),
+('57201000177', 'FRANCISCO GUTIERREZ SOLANO', 'HOMBRE'),
+('57201000178', 'NOHEMI RAMIREZ CASTILLO', 'MUJER'),
+('57201000200', 'GONZALO HERNANDEZ FLORES', 'HOMBRE');
 
 -- --------------------------------------------------------
 
@@ -54,9 +55,9 @@ INSERT INTO `alumnos` (`Matricula`, `Nombre`, `Genero`) VALUES
 
 CREATE TABLE `maestros` (
   `Id` varchar(11) NOT NULL,
-  `Nombre` varchar(20) NOT NULL,
-  `Paterno` varchar(19) NOT NULL,
-  `Materno` varchar(20) NOT NULL
+  `Nombre` varchar(45) NOT NULL,
+  `Paterno` varchar(40) NOT NULL,
+  `Materno` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -64,13 +65,12 @@ CREATE TABLE `maestros` (
 --
 
 INSERT INTO `maestros` (`Id`, `Nombre`, `Paterno`, `Materno`) VALUES
-('0087', 'Antony', 'alejo', 'Tecuapa'),
-('1100', 'ingless', 'hhhhhh', 'nmmmmmm'),
-('1102', 'EFRAIN', 'TECORRAL', 'CESAR'),
-('1103', 'gerardo', 'ort', 'sss'),
-('1115', 'hhhhh', 'jjjjjjj', 'kkkkkkkkkkkk'),
-('1118', 'reyes', 'gonzales', 'gerardo'),
-('6565', 'GHJGHJGHJGJ', 'HJGHJGHJG', 'KJHJKHJKHKJ');
+('1101', 'ROGELIO ', 'PASCUALEÃO', 'CHEPILLO'),
+('1102', 'ANTONIETA', 'ALEJO', 'TECUAPA'),
+('1103', 'JOSE JESUS', 'RODRIGUEZ', 'NAVARRETE'),
+('1104', 'HECTOR ', 'DANIEL', 'ESTEBAN'),
+('1105', 'YOLETHE', 'ESTEBAN', 'ALEJO'),
+('1106', 'GAEL ', 'RODRIGUEZ', 'CATALAN');
 
 -- --------------------------------------------------------
 
@@ -80,7 +80,7 @@ INSERT INTO `maestros` (`Id`, `Nombre`, `Paterno`, `Materno`) VALUES
 
 CREATE TABLE `materias` (
   `Clavemat` varchar(4) NOT NULL,
-  `Nombre` varchar(20) NOT NULL,
+  `Nombre` varchar(40) NOT NULL,
   `Cuatrimestre` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -89,15 +89,14 @@ CREATE TABLE `materias` (
 --
 
 INSERT INTO `materias` (`Clavemat`, `Nombre`, `Cuatrimestre`) VALUES
-('1102', 'Talleres', '12'),
-('1103', 'matematicas', '11'),
-('1109', 'espaÃnol', '11'),
-('1198', 'historia', '20'),
-('1235', 'geografia', '25'),
-('4040', 'hhhhhhh', '56'),
-('5454', 'julio', '76'),
-('5656', 'extranjeras', '12'),
-('7878', 'tutotia', '12');
+('1101', 'ESPAÃOL', '11'),
+('1102', 'MATEMATICAS', '11'),
+('1103', 'RECREACION', '11'),
+('1104', 'CIENCIAS NATURALES', '12'),
+('1107', 'INGLES', '10'),
+('1108', 'CIENCIAS DE LA SALUD', '13'),
+('1109', 'EDUCACION FISICA', '13'),
+('1110', 'TECNOLOGIAS', '13');
 
 -- --------------------------------------------------------
 

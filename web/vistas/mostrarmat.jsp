@@ -22,8 +22,8 @@ if(usuario==null)
         <!--<th><a href="SAlumno?accion=nuevo"><button>Nuevo Alumno</button></a></th>-->
     <table>
           <tr>
-            <th><a href="#" onclick="procesar('nuevomat','')">Nuevo Materia</a></th>
-            <th><a href="SVista">Regresar</a></th>
+            <th><a href="#" onclick="procesar('nuevomat','')" style="background-color: graytext; border:1px;  text-decoration: none; border-collapse: collapse; border-width: 3px; border-radius: 4px; color: black;">Nuevo Materia</a></th>
+            <th><a href="SVista" style="background-color: graytext; border:1px; text-decoration: none; border-radius: 4px; color: black;">Regresar</a></th>
           </tr>
    </table>
         <br>
